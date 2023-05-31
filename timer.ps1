@@ -15,11 +15,5 @@ while ($currentTime -lt $endTime) {
 }
 
 
-#for ($i = 1; $i -le 100; $i++ ) {
-#    Write-Progress -Activity $message -Status "$i% Complete:" -PercentComplete $i
-#    Start-Sleep -Seconds (60 / 100 * [int]$waitTime)
-#}
-
-
 $wshell = New-Object -ComObject Wscript.Shell
 $wshell.Popup("Time is over.")
